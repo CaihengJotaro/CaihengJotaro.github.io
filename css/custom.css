@@ -1,0 +1,36 @@
+/* 全局动画过渡 */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* 卡片悬停效果 */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 4px;
+}
+
+/* 标题装饰线 */
+.post-title:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #3b70fc, #26c6da);
+  margin: 15px auto 0;
+}
+
+/* 图片圆角阴影 */
+.post-content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
